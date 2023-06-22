@@ -10,13 +10,23 @@ const precos = [100, 500, 100, 200, 50]   //nesse caso o 50 sairia de graça!
 //  3.3 totalAPagar = soma - desconto
 
 let valorAPagar = 0
+let menorNumero = Math.min(...precos)    /// ... como se cada numero fosse uma variavel diferente
+console.log(menorNumero)
 
 for (let i = 0; i < precos.length; i++) {
-    if (precos.length < 5) {
-        valorAPagar += precos[i]
-    }
+    valorAPagar += precos[i]    // fazendo um laço que soma todos os itens do array
+}
+
+if (precos.length >= 5) {
+    valorAPagar -= menorNumero   //soma de todos menos o menor numero
 }
 console.log(valorAPagar)
+
+
+
+
+
+
 
 
 
