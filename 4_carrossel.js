@@ -12,12 +12,12 @@ const sequencia = ['>', '>', '>', '<', '>', '<', '>', '>', '>']   //5
 let indice = 0
 for (let item of sequencia) {
     if (item === '>') {
-        indice++
+        indice++    //soma 1
     } else {        //<
-        indice--
+        indice--    //diminui 1
     }
 
-    if (indice < 0) {
+    if (indice < 0) {      //forçando o programa a ficar dentro dos parametros desejados
         indice = 6
     } else if (indice > 6) {
         indice = 0
